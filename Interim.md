@@ -11,7 +11,7 @@ As part of the study, we investigated numerous methodologies, and this paper det
 
 ## Expected Progress as per Timeline:
 - Completion of data preprocessing (Completed)
-- Begin working on the implementation of the first apprach/paper 
+- Begin working on the implementation of the first approach/paper (Completed)
 
 ## Progress made:
 - We first approach the understanding of the architecture presented in the paper: __A Study on Efficiency, Accuracy and Document Structure
@@ -19,20 +19,16 @@ for Answer Sentence Selection__
 - We have performed exploratory data anlaysis to identify any patterns and applied tokenization by ensuring we filter noise in the data and finally we applied embeddings to convert text to meaningful representation (especially for the WikiQA dataset)
 - We have also implemented the word relatedness part of the Cosinet architecture as described in the pair, to allow us to apply static attention based on similarity between the question and the answer sentence words.
   
-
 ## Exploratory Data Analysis(EDA):
-Dataset originally extracted from STS Benchmark and the data available at these location:   
+We used the WikiQA dataset as well as the SQuAD dataset for the task. Links for the same can be found here
 https://huggingface.co/datasets/wiki_qa  
 https://www.microsoft.com/en-us/download/details.aspx?id=52419
 https://paperswithcode.com/dataset/squad
-
-We also worked with the SQuAD dataset and performed preprocessing for the same. 
 
 The datasets (after preprocessing) have been uploaded to drive and links to them have been included in the respective ipynb notebooks.
 
 ## Tokenization:
 Check preprocessing.ipynb for the below steps done.
-<br> 
 
 As part of tokenization, the following preprocessing processes were used:
 
@@ -50,11 +46,19 @@ As part of tokenization, the following preprocessing processes were used:
 ## Implementation of Paper 1
 
 ### 1. Word Embeddings 
+Check embeds_and_cosine.ipynb for the below steps done.
+
+As per the first paper, we used Numberbatch embeddings to create the embeddings for the words in the dataset. OOV words as well as padding, unknown and sentence tags were handled accordingly to finally create an embeddings matrix for the WikiQA dataset.
 
 ### 2. Cosinet Mechanism
+Check paper1.ipynb for the below steps done.
 
+As per the paper, we compare all the embeddings for the words in the question sentence with the embeddings of the words in the answer sentence (taking them pairwise) to compute the cosine similarity. For each word, the corresponding maximum cosine similarity is found, and the embedding for the word is extended with the coside similarity as found. This is done for all question-answer pairs, and for all the words in each of the sentences. 
 
 ## Next Steps:
+
+### 1. Completing the Implementation of Approach 1:
+- We plan to complete the implementation of the first approach by implementing the question-answer encoder, followed by a RNN model and a feed forward model to get a final score for each question-answer pair.
 
 ### 1. Implementation of Approach 2: TANDA
 - In a nutshell, TANDA is a technique for fine-tuning pre-trained Transformer models sequentially in two steps:
@@ -65,8 +69,6 @@ As part of tokenization, the following preprocessing processes were used:
 - ASNQ is a dataset for answer sentence selection derived from Google Natural Questions (NQ) dataset (Kwiatkowski et al. 2019). We plan to use it to transfer the pretrained models mentioned in the above paper.
 
 ### 2. Other Base-Line Models
-
-
-
+- We have planned to use BERT based baselines to compare the performance of the models. 
 ### 3. Comparison and Analysis
-
+- This would include coding up the evaluation metrics and comparing the performance of the models agaisnt each other and against the baselines.
