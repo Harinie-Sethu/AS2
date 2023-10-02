@@ -70,5 +70,9 @@ As per the paper, we compare all the embeddings for the words in the question se
 
 ### 2. Other Base-Line Models
 - We have planned to use BERT based baselines to compare the performance of the models. 
+- The main model we plan to use is described in the following paper:  [__BERTSel: Answer Selection with Pre-trained models__](https://arxiv.org/pdf/1905.07588v1.pdf) 
+- The code for the same can be found in the following github repository: [BERTSel](https://github.com/BPYap/BERTSel/tree/master)
+
+- If time permits, we also intend to code another baseline model, as described in the following paper: [__BAS: An Answer Selection Method Using BERT Language Model__](https://arxiv.org/ftp/arxiv/papers/1911/1911.01528.pdf)
 ### 3. Comparison and Analysis
-- This would include coding up the evaluation metrics and comparing the performance of the models agaisnt each other and against the baselines.
+- This would include coding up the evaluation metrics as mentioned in the project outline and comparing the performance of the models agaisnt each other and against the baselines.
