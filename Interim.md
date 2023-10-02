@@ -15,12 +15,17 @@ for Answer Sentence Selection__
   
 
 ## Exploratory Data Analysis(EDA):
-Dataset downloaded from hugging face repo originally extracted from STS Benchmark and the data available at these location:   
+Dataset originally extracted from STS Benchmark and the data available at these location:   
 https://huggingface.co/datasets/wiki_qa  
 https://www.microsoft.com/en-us/download/details.aspx?id=52419
+https://paperswithcode.com/dataset/squad
 
+## Implementation of Paper 1:
 
-## Tokenization:
+### 1. Tokenization:
+Check preprocessing.ipynb for the below steps done.
+<br> 
+
 As part of tokenization, the following preprocessing processes were used:
 
 - Remove punctuation
@@ -28,9 +33,14 @@ As part of tokenization, the following preprocessing processes were used:
 - Use Lower case
 - Used Applied Lemmatization
 - Used Applied Stemming
-- Unknown treatment by replacing all words with less frequency with the unk tag
+- Sentences were padded with < UNK >, < PAD >, < S >, < /S >
 - The length of the sentences was considerably decreased after using the preceding preparation processes
 - Removal of questions with no answers
+- Embeddings were handles for OOV words
+
+
+### 2. Cosinet Mechanism
+
 
 ## Next Steps:
 
@@ -46,4 +56,7 @@ As part of tokenization, the following preprocessing processes were used:
 
 ### 2. Other Base-Line Models
 
+
+
 ### 3. Comparison and Analysis
+
