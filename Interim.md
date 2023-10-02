@@ -21,14 +21,15 @@ for Answer Sentence Selection__
   
 ## Exploratory Data Analysis(EDA):
 We used the WikiQA dataset as well as the SQuAD dataset for the task. Links for the same can be found here
+
 https://huggingface.co/datasets/wiki_qa  
 https://www.microsoft.com/en-us/download/details.aspx?id=52419
 https://paperswithcode.com/dataset/squad
 
-The datasets (after preprocessing) have been uploaded to drive and links to them have been included in the respective ipynb notebooks.
+The datasets (after preprocessing) have been uploaded to drive and links to them have been included in the `preprocessing.ipynb` notebook.
 
 ## Tokenization:
-Check preprocessing.ipynb for the below steps done.
+Check `preprocessing.ipynb` for the below steps done.
 
 As part of tokenization, the following preprocessing processes were used:
 
@@ -46,12 +47,14 @@ As part of tokenization, the following preprocessing processes were used:
 ## Implementation of Paper 1
 
 ### 1. Word Embeddings 
-Check embeds_and_cosine.ipynb for the below steps done.
+Check `embeds_and_cosine.ipynb` for the below steps done.
 
 As per the first paper, we used Numberbatch embeddings to create the embeddings for the words in the dataset. OOV words as well as padding, unknown and sentence tags were handled accordingly to finally create an embeddings matrix for the WikiQA dataset.
 
+The link to the generated embeddings for the WikiQA dataset can also be found in the notebook.
+
 ### 2. Cosinet Mechanism
-Check paper1.ipynb for the below steps done.
+Check `paper1.ipynb` for the below steps done.
 
 As per the paper, we compare all the embeddings for the words in the question sentence with the embeddings of the words in the answer sentence (taking them pairwise) to compute the cosine similarity. For each word, the corresponding maximum cosine similarity is found, and the embedding for the word is extended with the coside similarity as found. This is done for all question-answer pairs, and for all the words in each of the sentences. 
 
