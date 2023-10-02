@@ -21,16 +21,19 @@ for Answer Sentence Selection__
   
 
 ## Exploratory Data Analysis(EDA):
-Dataset downloaded from hugging face repo originally extracted from STS Benchmark and the data available at these location:   
+Dataset originally extracted from STS Benchmark and the data available at these location:   
 https://huggingface.co/datasets/wiki_qa  
 https://www.microsoft.com/en-us/download/details.aspx?id=52419
+https://paperswithcode.com/dataset/squad
 
 We also worked with the SQuAD dataset and performed preprocessing for the same. 
 
 The datasets (after preprocessing) have been uploaded to drive and links to them have been included in the respective ipynb notebooks.
 
-
 ## Tokenization:
+Check preprocessing.ipynb for the below steps done.
+<br> 
+
 As part of tokenization, the following preprocessing processes were used:
 
 - Remove punctuation
@@ -38,12 +41,18 @@ As part of tokenization, the following preprocessing processes were used:
 - Use Lower case
 - Used Applied Lemmatization
 - Used Applied Stemming
-- Unknown treatment by replacing all words with less frequency with the unk tag
+- Sentences were padded with < UNK >, < PAD >, < S >, < /S >
 - The length of the sentences was considerably decreased after using the preceding preparation processes
 - Removal of questions with no answers
+- Embeddings were handles for OOV words
 
-## Embeddings:
-As per the paper 
+
+## Implementation of Paper 1
+
+### 1. Word Embeddings 
+
+### 2. Cosinet Mechanism
+
 
 ## Next Steps:
 
@@ -56,6 +65,8 @@ As per the paper
 - ASNQ is a dataset for answer sentence selection derived from Google Natural Questions (NQ) dataset (Kwiatkowski et al. 2019). We plan to use it to transfer the pretrained models mentioned in the above paper.
 
 ### 2. Other Base-Line Models
-- For baseline models, 
+
+
 
 ### 3. Comparison and Analysis
+
