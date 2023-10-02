@@ -11,8 +11,6 @@ As part of the study, we investigated numerous methodologies, and this paper det
 ## Approach:
 We have performed exploratory data anlaysis to identify any patterns and applied tokenization by ensuring we filter noise in the data and finally we applied embeddings to convert text to meaningful representation.  
 
-And then we applied normalized cosine similarity to derive the similarity scores. The predicted scores are evaluated with pearson correlation against actual scores.
-
 ## Exploratory Data Analysis(EDA):
 Dataset downloaded from hugging face repo originally extracted from STS Benchmark and the data available at this location: https://huggingface.co/datasets/wiki_qa
 
