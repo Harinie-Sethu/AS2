@@ -43,20 +43,59 @@ As part of tokenization, the following preprocessing processes were used:
 - Removal of questions with no answers
 - Embeddings were handles for OOV words
 
+## Dataset Analysis:
+The first dataset explored was the WikiQA dataset. This dataset consisted of 3044 questions in total, out of which 1242 had answers and were considered as part of our dataset.
+
+The exact statistics were:
+- Number of questions in the train set: 2117
+- Number of questions in the train set without answers: 1244
+- Number of questions in the train set with answers: 873
+
+- Number of questions in the validation set: 295
+- Number of questions in the validation set without answers: 169
+- Number of questions in the validation set with answers: 126
+
+- Number of questions in the test set: 632
+- Number of questions in the test set without answers: 389
+- Number of questions in the test set with answers: 243
+
+The dataset, which was initially in the form (question, answer, label) for each entry, was modified into another format: (question, [candidate answers], [answer labels]) during processing.
+
+The second dataset processed was the SQuAD dataset (Stanford Question Answering Dataset). This dataset had 87599 entries in the train set, and 10570 entries in the validation set.
+
+Each entry of the dataset consisted of a question, a paragraph providing context about the question (with the answer within it), the answer text and the index at which the answer started. As mentioned in the Cosinet paper, this was modified during processing to a different format: (question, [candidate answers], [answer labels]) - the same format as the WikiQA dataset. This was done by using the spaCy tokenizer on the context paragraph, getting all the individual sentences, then labelling the sentence containing the answer text as the most suitable sentence.
+
+After processing, this dataset had the same dimensions as before - 87599 entries in train and 10570 entries in validation.
+
+Another dataset, QNLI, was explored, but was not processed as it was not used as part of the Cosinet paper.
 
 ## Implementation of Paper 1
 
 ### 1. Word Embeddings 
 Check `embeds_and_cosine.ipynb` for the below steps done.
 
-As per the first paper, we used Numberbatch embeddings to create the embeddings for the words in the dataset. OOV words as well as padding, unknown and sentence tags were handled accordingly to finally create an embeddings matrix for the WikiQA dataset.
+Here, we use the ConceptNet Numberbatch embeddings - they are deemed to be more accurate than unsupervised word embeddings such as GloVe. Numberbatch embeddings also reduce the distance between word embeddings of related words in a vocabulary.
+
+In particular, Numberbatch embeddings use a novel technique in order to handle OOV (out-of-vocabulary words), instead of assigning random embeddings to such words which techniques like GloVe do. 
+
+The strategy applied involves:
+- Removing one letter from the end and seeing if the resulting word is a prefix of other words in the Numberbatch vocabulary. If yes, then we average the embeddings of those known words and return the resulting embedding as our output. 
+- If we get an unknown prefix, then we keep removing letters from the end until we get a known prefix or when a single character remains.
+
+This vocabulary strategy improves performance in the presence of unfamiliar words, as we are able to use matching word prefixes to obtain more suitable embeddings.
+
+The Numberbatch embeddings are obtained from the ConceptNet GitHub repo, by downloading `numberbatch-en.txt`. It contains embeddings for 516783 words.
 
 The link to the generated embeddings for the WikiQA dataset can also be found in the notebook.
 
 ### 2. Cosinet Mechanism
 Check `paper1.ipynb` for the below steps done.
 
-As per the paper, we compare all the embeddings for the words in the question sentence with the embeddings of the words in the answer sentence (taking them pairwise) to compute the cosine similarity. For each word, the corresponding maximum cosine similarity is found, and the embedding for the word is extended with the coside similarity as found. This is done for all question-answer pairs, and for all the words in each of the sentences. 
+As per the paper, we compare all the embeddings for the words in the question sentence with the embeddings of the words in the answer sentence (taking them pairwise) to compute the cosine similarity. 
+
+For each word, the corresponding maximum cosine similarity is found, and the embedding for the word is extended with the coside similarity as found. This is done for all question-answer pairs, and for all the words in each of the sentences. 
+
+This exploits the word relatedness or word overlap properly which as the paper disucsses is extremely helpful during answer selection tasks.
 
 ## Next Steps:
 
