@@ -1,15 +1,21 @@
 # AS2
 # Answer Sentence Selection
 
+### __Mid Submission__
+
 - You can find the work done till mid submission explained and summarized under interim.md
 
-### Final Submission
+<br>
 
-##### Work done
+### __Final Submission__
+
+##### Work done: 
+- Implemented BERTSel (https://arxiv.org/pdf/1905.07588v1.pdf) as a baseline model using BERT.
 
 - Implemented TANDA architecture using Huggingface models, tested it on 4 pretrained models (BERT, RoBERTa, DistilBert, ALBERT) and compared the results.
 
-##### Links
+
+##### Links:
 
 - Link to Final Report: https://docs.google.com/document/d/1UacZAHgAV_ZUBtIiRFswzU8mXSKb47u2UCjSiDF6H1U/edit?usp=sharing
 
