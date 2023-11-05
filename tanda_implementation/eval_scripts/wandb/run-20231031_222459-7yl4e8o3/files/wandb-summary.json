@@ -1,0 +1,1 @@
+{"eval/loss": 1.2516249418258667, "eval/mAP": 0.8658017864738409, "eval/MRR": 0.8658017864738409, "eval/runtime": 31.5192, "eval/samples_per_second": 74.589, "eval/steps_per_second": 2.348, "train/global_step": 0, "_timestamp": 1698773219.7248719, "_runtime": 1920.5400087833405, "_step": 2}

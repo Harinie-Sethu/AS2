@@ -1,0 +1,172 @@
+
+You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+mAP:  0.8252942285160869
+mRR:  1.0
+Epoch  1
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.weight', 'classifier.weight', 'pre_classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+BERT FT
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+mAP:  0.8126369370740429
+mRR:  1.0
+mAP:  0.7750586939912482
+mRR:  1.0
+TANDA
+mAP:  0.8352609858723843
+mRR:  0.9590163934426229
+mAP:  0.8548610816127025
+mRR:  0.9578059071729957
+Epoch  2
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.weight', 'classifier.weight', 'pre_classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+BERT FT
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+mAP:  0.8266783685236423
+mRR:  1.0
+mAP:  0.8264383898826697
+mRR:  1.0
+mAP:  0.8097495151178506
+mRR:  1.0
+TANDA
+mAP:  0.8443457100319809
+mRR:  0.9631147540983607
+mAP:  0.8673628241928193
+mRR:  0.9631147540983607
+mAP:  0.8696788636723665
+mRR:  0.9662447257383966
+Epoch  3
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.weight', 'classifier.weight', 'pre_classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+BERT FT
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+mAP:  0.8285146596050537
+mRR:  1.0
+mAP:  0.8349446704198932
+mRR:  1.0
+mAP:  0.8376306755756999
+mRR:  1.0
+mAP:  0.8096931352248188
+mRR:  1.0
+TANDA
+mAP:  0.8538997126069033
+mRR:  0.9549180327868853
+mAP:  0.8716275594383062
+mRR:  0.9590163934426229
+mAP:  0.8698017859882877
+mRR:  0.9631147540983607
+mAP:  0.8774101951844411
+mRR:  0.9725738396624473
+Epoch  4
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.weight', 'classifier.weight', 'pre_classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+BERT FT
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+mAP:  0.8280212891931076
+mRR:  1.0
+mAP:  0.8386861201957202
+mRR:  1.0
+mAP:  0.83812465809225
+mRR:  1.0
+mAP:  0.8399195646186693
+mRR:  1.0
+mAP:  0.8074402913060583
+mRR:  1.0
+TANDA
+mAP:  0.857868223364672
+mRR:  0.9549180327868853
+mAP:  0.8715516765803913
+mRR:  0.9672131147540983
+mAP:  0.8778383860209756
+mRR:  0.9631147540983607
+mAP:  0.8776461172494718
+mRR:  0.9631147540983607
+mAP:  0.8823494510125792
+mRR:  0.9746835443037974
+Epoch  5
+BERT FT
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.weight', 'classifier.weight', 'pre_classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+mAP:  0.8214816322645897
+mRR:  1.0
+mAP:  0.8352653859244131
+mRR:  1.0
+mAP:  0.8373222020100971
+mRR:  0.9959016393442623
+mAP:  0.8417922328977102
+mRR:  0.9959016393442623
+mAP:  0.8418890954132082
+mRR:  0.9959016393442623
+mAP:  0.8225253900102186
+mRR:  0.9978902953586498
+TANDA
+mAP:  0.8636308653978059
+mRR:  0.9631147540983607
+mAP:  0.872968936253985
+mRR:  0.9672131147540983
+mAP:  0.8740684314006112
+mRR:  0.9631147540983607
+mAP:  0.8841786359394561
+mRR:  0.9631147540983607
+mAP:  0.8842158937635991
+mRR:  0.9631147540983607
+mAP:  0.8833618482471146
+mRR:  0.9767932489451476
+Epoch  6
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.weight', 'classifier.weight', 'pre_classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+BERT FT
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+You're using a DistilBertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+mAP:  0.8345673532569031
+mRR:  1.0
+mAP:  0.842861964325254
+mRR:  1.0
+mAP:  0.8431197820717873
+mRR:  0.9959016393442623
+mAP:  0.847963646509676
+mRR:  0.9918032786885246
+mAP:  0.849970878542985
+mRR:  0.9918032786885246
+mAP:  0.8508323124512124
+mRR:  0.9918032786885246
+mAP:  0.8190251409771241
+mRR:  0.9957805907172996
+TANDA
+mAP:  0.8510873156818552
+mRR:  0.9590163934426229
+mAP:  0.8751923721780541
+mRR:  0.9631147540983607
+mAP:  0.8748847030160631
+mRR:  0.9631147540983607
+mAP:  0.8872245846274812
+mRR:  0.9672131147540983
+mAP:  0.8860066107878768
+mRR:  0.9672131147540983
+mAP:  0.8879578858334142
+mRR:  0.9672131147540983
+mAP:  0.884721691516638
+mRR:  0.9810126582278481

@@ -1,0 +1,50 @@
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+/home2/kapilrk04/anaconda3/lib/python3.11/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+  warnings.warn(
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'inputs', 'label_ids', 'predictions']
+[  101  2129  3060  4841  2020 17352  2000  1996  2149   102  3060  7521
+  2000  1996  2142  2163  5218  2000  7489  2000  1996  2142  2163  2040
+  2024  2030  2020 10342  1997  3088  1012   102     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0  -100  -100  -100  -100  -100  -100  -100
+  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100
+  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100
+  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100
+  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100
+  -100  -100  -100  -100  -100  -100  -100]
+map score: 0.8658017864738409
+mrr score: 0.8658017864738409
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'inputs', 'label_ids', 'predictions']
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.15.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'inputs', 'label_ids', 'predictions']
+[[  101  2129  3060  4841  2020 17352  2000  1996  2149   102  3060  7521
+   2000  1996  2142  2163  5218  2000  7489  2000  1996  2142  2163  2040
+   2024  2030  2020 10342  1997  3088  1012   102     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0  -100  -100  -100  -100  -100  -100  -100
+   -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100
+   -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100
+   -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100
+   -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100
+   -100  -100  -100  -100  -100  -100  -100]
+ [  101  2129  3060  4841  2020 17352  2000  1996  2149   102  1996  2744
+   3060  1999  1996  9531  1997  2023  3720  5218  2000 10056  2030  2120
+   7321  2738  2084  5762 12912  1012   102     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0  -100  -100  -100  -100  -100  -100  -100
+   -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100
+   -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100
+   -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100
+   -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100  -100
+   -100  -100  -100  -100  -100  -100  -100]] [[ 0.67060935 -0.38813365]
+ [ 4.3698535  -4.115274  ]] [0 0]
+/home2/kapilrk04/anaconda3/lib/python3.11/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+  warnings.warn(
+map score: 0.8658017864738409
